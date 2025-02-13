@@ -31,12 +31,12 @@ const Header: React.FC = () => {
         >
           My Tickets
         </Link>
-        <a
-          href="/my-project"
+        <Link
+          to="/my-project"
           className="text-[#B3B3B3] font-[JejuMyeongjo] hover:text-white"
         >
           About Project
-        </a>
+        </Link>
       </nav>
 
       {/* Buttons */}
