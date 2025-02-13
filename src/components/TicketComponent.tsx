@@ -36,7 +36,7 @@ const TicketComponent: React.FC = () => {
     <div className="min-h-screen text-white flex items-center justify-center p-4">
       <div className="mt-5 p-6 md:p-12 rounded-[32px] border border-[#0E464F] w-full max-w-[700px]">
         <TicketFormHeader step={1} title="Ticket Selection" />
-        <div className="flex mt-6 justify-center items-center border border-[#0E464F] rounded-xl p-6">
+        <div className="flex mt-6 justify-center items-center md:border md:border-[#0E464F] rounded-xl p-6">
           <div className="w-full">
             <TicketCard/>
             <Divider />

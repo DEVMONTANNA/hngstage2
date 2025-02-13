@@ -14,7 +14,7 @@ const ButtonBg: React.FC<ButtonBgProps> = ({ text, type,disabled, handleClick })
       onClick={handleClick}
       type={type}
       disabled={disabled}
-      className="w-full px-4 py-2 bg-[#24A0B5] cursor-pointer hover:bg-[#549aa7] text-white rounded-lg"
+      className="w-full font-[JejuMyeongjo] px-4 py-2 bg-[#24A0B5] cursor-pointer hover:bg-[#549aa7] text-white rounded-lg"
     >
       {text}
     </button>

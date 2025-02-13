@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { CloudUpload } from "lucide-react";
 import envelope from "../../assets/svgs/envelope.svg";
+import download from "../../assets/svgs/download.svg";
 import Divider from "../Divider";
 import { useNavigate } from "react-router-dom";
 import ButtonOutline from "../buttons/ButtonOutline";
@@ -105,7 +105,7 @@ const TicketRegistrationForm: React.FC = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <div className="p-[24px] pb-[48px] bg-[rgba(5,36,44,0.40)] border border-[#197686] rounded-2xl shadow-lg w-full">
+      <div className="md:p-[24px] p-[20px] md:px-[24px] px-[30px] pb-[48px] bg-[rgba(5,36,44,0.40)] border border-[#197686] rounded-2xl shadow-lg w-full">
         <h2 className="text-white text-[16px] font-[400] mb-4">
           Upload Profile Photo
         </h2>
@@ -125,7 +125,6 @@ const TicketRegistrationForm: React.FC = () => {
             htmlFor="file-upload"
             className="flex flex-col items-center justify-center w-[240px] h-[240px] bg-[#0E464F] border-[4px] border-[rgba(36,160,181,0.50)] rounded-[32px] cursor-pointer hover:bg-[#0E2D35] transition-all relative overflow-hidden"
           >
-            {}
             {selectedFile && selectedFile.type?.startsWith("image/") ? (
               <img
                 src={URL.createObjectURL(selectedFile)}
@@ -138,7 +137,7 @@ const TicketRegistrationForm: React.FC = () => {
               </p>
             ) : (
               <>
-                <CloudUpload size={40} className="text-[#3C8991] mb-2 z-10" />
+                <img src={download} className="text-[#3C8991] mb-2 z-10" />
                 <p className="text-[#FFF] text-center text-sm z-10">
                   Drag & drop or click to upload
                 </p>

@@ -42,7 +42,7 @@ const Header: React.FC = () => {
       {/* Buttons */}
       <button
         onClick={handleNext}
-        className=" px-4 py-2 bg-white cursor-pointer text-black hover:bg-[#cfcfcf] rounded-lg"
+        className=" px-4 py-2 font-[JejuMyeongjo] bg-white cursor-pointer text-black hover:bg-[#cfcfcf] rounded-lg"
       >
         MY TICKETS →
       </button>

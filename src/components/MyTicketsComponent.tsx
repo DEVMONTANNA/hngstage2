@@ -79,7 +79,7 @@ const MyTicketsComponent: React.FC = () => {
               <div className="ticket-border h-[700px] md:h-[679px] w-full">
                 <div className="ticket-card h-[699px] md:h-[680px] w-full">
                   <div className="mx-[10px] md:mx-[30px] my-[45px]">
-                    <div className="p-2 md:p-5 pb-0 border rounded-[16px] border-[#24A0B5]">
+                    <div className="p-2 md:p-5 pb-0 md:border rounded-[16px] md:border-[#24A0B5]">
                       <div className="flex my-4 w-full justify-center items-center">
                         <img src={eventLogo} alt="Event Logo" />
                       </div>
