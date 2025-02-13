@@ -28,14 +28,14 @@ const MyTicket: React.FC = () => {
         <div className="flex justify-center items-center">
           <div>
             <p className="mt-2 text-center text-lg text-gray-600 dark:text-gray-400">
-              The page you're looking for doesn't exist or has been moved.
+              You do not have any ticket.
             </p>
             <div className="flex justify-center items-center">
               <Link
                 to="/"
                 className="mt-6 rounded-lg  px-6 py-3 text-lg font-medium text-white transition"
               >
-                <ButtonBg type="button" text="Go Back Home" />
+                <ButtonBg type="button" text="Go A Ticket" />
               </Link>
             </div>
           </div>
