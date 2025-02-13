@@ -9,26 +9,26 @@ import TicketCard from "./cards/TicketCard";
 
 const TicketComponent: React.FC = () => {
   const [selectedTicket, setSelectedTicket] = useState(() => {
-    return localStorage.getItem("selectedTicket") || "Free";
+    return localStorage.getItem("selectedTicket") || "Regular";
   });
   const [ticketQuantity, setTicketQuantity] = useState(() => {
     return parseInt(localStorage.getItem("ticketQuantity") || "1", 10);
   });
 
-  const tickets = ["Free", "VIP", "VVIP"];
+  const tickets = ["Regular", "VIP", "VVIP"];
   const navigate = useNavigate();
 
   const handleNext = () => {
     navigate("/ticket-registration");
     localStorage.setItem("selectedTicket", selectedTicket);
     localStorage.setItem("ticketQuantity", ticketQuantity.toString());
-    setSelectedTicket("Free");
+    setSelectedTicket("Regular");
     setTicketQuantity(1);
   };
   const handleCancel = () => {
     localStorage.removeItem("selectedTicket");
     localStorage.removeItem("ticketQuantity");
-    setSelectedTicket("Free");
+    setSelectedTicket("Regular");
     setTicketQuantity(1);
   };
 

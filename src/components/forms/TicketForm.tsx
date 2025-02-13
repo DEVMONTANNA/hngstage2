@@ -48,11 +48,12 @@ const TicketForm: React.FC<TicketFormProps> = ({
                 onClick={() => setSelectedTicket(ticket)}
               >
                 <span className="text-white text-lg md:text-2xl font-semibold">
-                  {ticket === "Free" ? "Free" : "$150"}
+                  {ticket === "Regular" ? "Regular" : "$150"}
                 </span>
                 <span className="text-neutral-50 text-sm md:text-base uppercase">
                   {ticket} Access
                 </span>
+                <p>20/52</p>
               </div>
             ))}
           </div>

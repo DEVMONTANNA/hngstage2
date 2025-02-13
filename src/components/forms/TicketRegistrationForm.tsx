@@ -228,7 +228,7 @@ const TicketRegistrationForm: React.FC = () => {
         <div className="hidden md:block w-full">
           <ButtonBg
             type="submit"
-            text={processing ? "Processing..." : "Get My Free Ticket"}
+            text={processing ? "Processing..." : "Get My Regular Ticket"}
             disabled={processing}
             handleClick={handleSubmit}
           />
@@ -236,7 +236,7 @@ const TicketRegistrationForm: React.FC = () => {
         <div className="block md:hidden w-full">
           <ButtonBg
             type="submit"
-            text={processing ? "Processing..." : "Get My Free Ticket"}
+            text={processing ? "Processing..." : "Get My Regular Ticket"}
             disabled={processing}
             handleClick={handleSubmit}
           />
