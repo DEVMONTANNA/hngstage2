@@ -25,17 +25,17 @@ const MyTicket: React.FC = () => {
   return (
     <div>
       {!user?.name ? (
-        <div className="flex justify-center items-center">
+        <div className="flex  h-screen justify-center items-center bg-[#041E23]">
           <div>
-            <p className="mt-2 text-center text-lg text-gray-600 dark:text-gray-400">
+            <h1 className="mt-2 text-center font-semibol text-lg text-white">
               You do not have any ticket.
-            </p>
+            </h1>
             <div className="flex justify-center items-center">
               <Link
                 to="/"
                 className="mt-6 rounded-lg  px-6 py-3 text-lg font-medium text-white transition"
               >
-                <ButtonBg type="button" text="Go A Ticket" />
+                <ButtonBg type="button" text="Get A Ticket" />
               </Link>
             </div>
           </div>
