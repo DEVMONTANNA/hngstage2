@@ -9,7 +9,7 @@ interface TicketFormHeaderProps {
 const TicketFormHeader: React.FC<TicketFormHeaderProps> = ({ step, title }) => {
   return (
     <div>
-      <div className="header md:flex block  justify-between items-center">
+      <div className="header md:flex block md:justify-between md:items-center">
         <span className="font-normal font-[JejuMyeongjo] text-white text-lg md:text-2xl">
           {title}
         </span>
