@@ -40,7 +40,7 @@ const TicketForm: React.FC<TicketFormProps> = ({
             {tickets.map((ticket) => (
               <div
                 key={ticket}
-                className={`w-full md:w-[158px]  h-[110px] p-3 cursor-pointer rounded-xl border-2 flex flex-col justify-start items-start gap-3 overflow-hidden ${
+                className={`w-full md:w-[158px]  h-[110px] p-3 pb-4 cursor-pointer rounded-xl border-2 flex flex-col justify-start items-start gap-3 overflow-hidden ${
                   selectedTicket === ticket
                     ? "border-[#24A0B5] bg-[#197686]"
                     : "border-[#197686]"
