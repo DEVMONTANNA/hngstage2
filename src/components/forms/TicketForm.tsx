@@ -27,7 +27,7 @@ const TicketForm: React.FC<TicketFormProps> = ({
           onChange={(e) => setTicketQuantity(Number(e.target.value))}
         >
           {[...Array(10).keys()].map((n) => (
-            <option key={n} value={n + 1}>
+            <option  key={n} value={n + 1}>
               {n + 1}
             </option>
           ))}
@@ -36,7 +36,7 @@ const TicketForm: React.FC<TicketFormProps> = ({
       <div className="mt-4">
         <h2 className="text-white text-base md:text-lg">Select Ticket Type:</h2>
         <div className="p-4 bg-[#042127] rounded-xl border border-[#07363e]">
-          <div className="flex flex-wrap justify-between gap-3">
+          <div className="flex flex-wrap justify-between gap-3 ">
             {tickets.map((ticket) => (
               <div
                 key={ticket}
@@ -53,7 +53,7 @@ const TicketForm: React.FC<TicketFormProps> = ({
                 <span className="text-neutral-50 text-sm md:text-base uppercase">
                   {ticket} Access
                 </span>
-                <p className="pb-2">20/52</p>
+                <p className="mt-[-5px]">20/52</p>
               </div>
             ))}
           </div>
