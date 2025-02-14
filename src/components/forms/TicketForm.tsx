@@ -53,7 +53,7 @@ const TicketForm: React.FC<TicketFormProps> = ({
                 <span className="text-neutral-50 text-sm md:text-base uppercase">
                   {ticket} Access
                 </span>
-                <p className="mt-[-5px]">20/52</p>
+                <p className="mt-[-10px]">20/52</p>
               </div>
             ))}
           </div>
